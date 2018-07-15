@@ -3,6 +3,7 @@ FROM php:7.2-alpine
 MAINTAINER Bogardo
 
 RUN apk add --no-cache curl wget git zip unzip rsync \
+    openssh openssh-client openssh-keygen openssh-keysign \
     && rm -rf /var/cache/apk/*
 
 RUN curl -sS https://getcomposer.org/installer | \
