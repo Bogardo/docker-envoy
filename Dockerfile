@@ -11,4 +11,6 @@ RUN curl -sS https://getcomposer.org/installer | \
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
-RUN composer global require laravel/envoy
+RUN composer global require laravel/envoy --no-progress --no-suggest
+
+RUN rm -rf /root/.composer/cache/*
