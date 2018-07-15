@@ -11,3 +11,4 @@ Contains:
 - zip
 - unzip
 - rsync
+- SSH
