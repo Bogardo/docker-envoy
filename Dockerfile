@@ -13,4 +13,4 @@ RUN apk add --no-cache curl wget git zip unzip rsync bash \
     && composer global require laravel/envoy --no-progress --no-suggest \
     && rm -rf /root/.composer/cache/*
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
